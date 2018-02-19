@@ -1,0 +1,248 @@
+h1, h2, h3, h4, h5, h6, h8, p1 {
+    -webkit-font-smoothing: antialiased;
+}
+h3, h4, h5, h8 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    line-height: 110%;
+    margin: 0.78rem 0 0.424rem 0;
+}
+h2 {
+    font-size: 3.56rem;
+    font-weight: 100;
+    line-height: 110%;
+    margin: 1.78rem 0 1.424rem 0;
+}
+h4{
+    font-size: 1rem;
+    padding-bottom: 8px;
+}
+h5, h8{
+    font-size: 1.8rem;
+    padding-bottom: 26px;
+}
+h6{
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    line-height: 150%;
+}
+h7{
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 150%;
+}
+p1 {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 110%;
+}
+p2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 110%;
+    padding-bottom: 50px;
+    padding-left: 10px;
+}
+p3{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color:#a59a96;
+    font-style: italic;
+    line-height: 110%;
+}
+pright{
+    text-align: right;
+}
+td{
+    font-weight: 300;
+    line-height: 150%;
+}
+th{
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 1.1rem;
+}
+nav .brand-logo{
+    padding-left: 25px;
+    /*height: 65px;*/
+}
+nav ul a{
+    padding-right: 25px;
+}
+.blogcontainer{
+    margin: auto;
+    width: 75%;
+    padding: 20px;
+}
+.container {
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    max-width: none;
+}
+.header {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding: 10px;
+}
+.blogpost {
+    margin: auto;
+    text-align: left;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #E1E2E1;
+    padding: 20px;
+}
+.content-wrapper{
+    margin: auto;
+    width: 75%;
+    padding: 20px;
+}
+.about-me{
+    background-color:#e6e9f4;
+}
+.headshot{
+    width: 100%;
+    height: auto;
+}
+.about-me-text{
+    padding: 20px;
+}
+.criteria-matrix-table{
+    width: 80%;
+    margin: auto;
+    -webkit-font-smoothing: antialiased;
+    border: solid;
+}
+blockquote {
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    line-height: 150%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 3px solid #b6b8c3;
+}
+.highlight {
+    background-color:#e8eaf6;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #d7ccc8;
+}
+.card-content{
+    height: 100px;
+}
+.card-title{
+    font-size: 10px;
+}
+.nav-extended{
+    background-color: #b6b8c3;
+    font-weight: 200;
+}
+.breadcrumb-wrapper {
+    background-color: #e6e9f4;
+    font-weight: 100;
+}
+.page-footer{
+    background-color: #b6b8c3;
+}
+.table-responsive-vertical{
+    border-color: #d7ccc8;
+    border-style: solid;
+    border-width: thin;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.note {
+    background-color: #e8eaf6;
+    border-left: solid 4px #b6b8c3;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 0px 12px 0px 12px;
+
+}
+.menudemoBasicUsage .md-menu-demo {
+    padding: 24px;
+}
+.menudemoBasicUsage .menu-demo-container {
+    min-height: 200px;
+}
+.card .card-image .black-card-text{
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    padding: 24px;
+    font-size: 24px;
+    font-weight: 300;
+}
+ul#ul{
+    /*list-style-position: inside;*/
+    display:list-item;
+    list-style-type: disc;
+}
+
+/*.hr-theme-slash-2 {*/
+    /*display: flex; }*/
+
+.hr-line {
+    width: 100%;
+    /*position: relative;*/
+    margin: 15px;
+    /*border-bottom: 30px solid #d7ccc8;*/
+    color: #d7ccc8}
+
+#mc_embed_signup label{
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: #d7ccc8;
+    font-weight: 200;
+}
+
+#mc_embed_signup .button{
+    background-color: #d7ccc8;
+}
+
+#mc_embed_signup input.email {
+    border-color: #d7ccc8;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+u{
+    text-decoration: none;
+    border-bottom: 10px #b6b8c3;
+    margin-top: 10px;
+}
+nav .brand-logo img{
+    height: 35px;
+}
+
+.londonmug img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.collaborate-container .row li{
+    list-style-position: inside;
+    padding-left: 15px;
+    padding-right: 20px;
+    text-indent: -20px;
+}
+
+.collaborate-container .row img, h8{
+    display: block;
+    /*justify-content: center;*/
+    margin: auto;
+    text-align: center;
+}
+
+
