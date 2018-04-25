@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development Advice: Mr. Penguin, My Main Squeeze | lemon water</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">-->
     <link rel="stylesheet" href="/assets/toolbar/toolbar.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!--<script type="text/typescript" src="menu.ts"></script>-->
+    <script type="text/javascript" src="close-side-nav.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.js"></script>
+    <!--<script type="text/javascript" src="jquery.js"></script>-->
     <script type="text/javascript">
+        $(window).load(function() {
+            $("body").show();
+        });
         $(document).ready(function(){
             $(".button-collapse").sideNav();
             $(".nav").load("/nav.html");
             $(".footer").load("/footer.html");
+            $('select').material_select();
         });
     </script>
     <link rel="shortcut icon" type="image/jpg" href="images/lemonwaterfavicon.png"/>
@@ -32,19 +40,21 @@
     </script>
 </head>
 
-<body>
+<body style="display:none;">
+<script>document.body.style.display = "none";</script>
 <div class="nav"></div>
 
 <div class = "content-wrapper">
     <p2>Selected post</p2><br>
     <div class="row">
-        <div class="col s12 m9">
+        <div class="col s12 m12">
             <div class ="blogpost">
                 <p1>Nov 23, 2017 - 2 minute read</p1>
                 <br>
                 <h3>My Main Squeeze – Mr. Penguin</h3>
+                <br>
                 <h7>Advice I received that should be passed on to other entry-level Devlopers</h7>
-                <br><br>
+                <br>
                 <p>In my first couple of weeks as a Software Engineering intern, I was talking to a colleague who was a few years my senior. I went over to ask him a question about the error I was seeing in the console. And, I'm not exaggerating when I share with you that, as soon as I set my Mac on his desk, I realized what I needed to do to relieve the error.</p>
 
                 <p>He laughed and said, "It happens to me all the time" and shared that he always asks any questions he has to his Penguin first. I looked at him a little cock-eye, and he pointed to the 2" X 1" foam penguin sitting on the back left corner of his desk. He said, <blockquote>"Nine times out of ten, I know the answer, and it might just take me asking someone or taking a quick break to figure it out on my own, so I ask my Penguin first".</blockquote></p>
@@ -78,15 +88,20 @@
                 </div>
             </div>
         </div>
-        <div class ="col s12 m3">
+    </div>
+    <!--<div class="row">-->
             <div class="about-me">
-                <img src="images/amandalinkedin.jpg" alt="author headshot" class="headshot"></li>
+            <!--<div class ="col s12 m9">-->
                 <div class="about-me-text">
                 <h5>Who Wrote It</h5>
+                <!--<img src="images/amandalinkedin.jpg" alt="author headshot" class="headshot"></li><br><br>-->
                 <p3>Amanda Aschenbrenner</p3><br>
-                    <p><p1>A new Software Engineer who, like more and more candidates each day, has leveraged non-traditional training tools and programs to build the skills required to be a strong Developer.</p1> <br> <br><p1>Prior to switching career fields to become a Software Engineer(SE), Amanda was a top-performing Product Marketer and Product Manager. She says, "She used to sell products (credit cards and jobs) and craft delightful experiences for people, and now she builds them!" </p1><br><br> <p1>She  shares her experience as she evolves in her Software Engineering career to help inspire and lead new candidates.</p1></p><br>
-                    <br>
+                    <p><p1>A new Software Engineer who, like more and more candidates each day, has leveraged non-traditional training tools and programs to build the skills required to be a strong Developer.</p1> <br> <br><p1>Prior to switching career fields to become a Software Engineer(SE), Amanda was a top-performing Product Marketer and Product Manager. She says, "She used to sell products (credit cards and jobs) and craft delightful experiences for people, and now she builds them!" </p1><br><br> <p1>She  shares her experience as she evolves in her Software Engineering career to help inspire and lead new candidates.</p1></p>
+                    <!--<br>-->
                 </div>
+            <!--</div>-->
+                <!--<div class ="col s12 m3">-->
+                    <!--<img src="images/amandalinkedin.jpg" alt="author headshot" class="headshot"></li></div>-->
                 <div id="mc_embed_signup">
                     <form action="https://lemonwater.us17.list-manage.com/subscribe/post?u=92ad750c386f16266a553db8b&amp;id=960846ab9a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <br>
@@ -94,14 +109,14 @@
                             <label for="mce-EMAIL">Subscribe to lemon water's mailing list to receive new posts</label>
                             <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_92ad750c386f16266a553db8b_960846ab9a" tabindex="-1" value=""></div>
-                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            <!--<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>-->
                         </div>
                     </form>
                 </div>
-            </div>
         </div>
     </div>
 </div>
+
 
 <!--<div class="blogcontainer">-->
     <!--<p2>Recent posts</p2>-->
@@ -116,7 +131,7 @@
                     <!--<p>There are a few routes to choose from to become a Software Engineer.</p>-->
                 <!--</div>-->
                 <!--<div class="card-action">-->
-                    <!--<a hrselect-your-path-switch-to-software-engineering.htmlhtml">Read</a>-->
+                    <!--<a href="select-your-path-switch-to-software-engineering">Read</a>-->
                 <!--</div>-->
             <!--</div>-->
         <!--</div>-->
@@ -131,7 +146,7 @@
                     <!--</p>-->
                 <!--</div>-->
                 <!--<div class="card-action">-->
-                    <!--<a hrearn-credibility-fast-new-developer.htmlhtml">Read</a>-->
+                    <!--<a href="earn-credibility-fast-new-developer">Read</a>-->
                 <!--</div>-->
             <!--</div>-->
         <!--</div>-->
@@ -145,7 +160,7 @@
                     <!--<p>Why I left a career I was a top-performer in to become a Software Engineer and be the newbie again.</p>-->
                 <!--</div>-->
                 <!--<div class="card-action">-->
-                    <!--<a hrwhy-I-learned-to-develop-software.htmlhtml">Read</a>-->
+                    <!--<a href="why-I-learned-to-develop-software">Read</a>-->
                 <!--</div>-->
             <!--</div>-->
         <!--</div>-->
