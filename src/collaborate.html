@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collaborate and build content for Deelopers | lemon water </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">-->
     <link rel="stylesheet" href="/assets/toolbar/toolbar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--<script type="text/typescript" src="menu.ts"></script>-->
+    <script type="text/javascript" src="close-side-nav.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>-->
     <script type="text/javascript">
+        $(window).load(function() {
+            $("body").show();
+        });
         $(document).ready(function(){
             $(".button-collapse").sideNav();
             $(".nav").load("/nav.html");
@@ -29,59 +36,57 @@
     </script>
 </head>
 
-<body>
+<body style="display:none;">
+<script>document.body.style.display = "none";</script>
 <div class="nav"></div>
 
 <div class="blogcontainer">
 
     <div class ="header">
-        <br>
-        <h2>Collaborate with lemon water</h2>
-        <p2> lemon water's purpose is to help guide new and aspiring Software Developers and Software Engineers to their goal. If you can help us, we can't wait to hear from you! </p2><br><br>
-    </div>
+        <h2>Collaborate with <br>lemon water</h2></div>
+        <h3> lemon water's purpose is to help guide new and aspiring Software Developers and Software Engineers to reach their goal(s). If you want to help, we can't wait to hear from you! </h3>
 
     <div class = "collaborate-container">
-    <div class="row">
-        <div class="col s12 m3">
-            <img src="images/feedback.png" height = "60%" width ="60%" align="center">
-            <br>
+    <!--<div class="row">-->
+        <!--<div class="col s12 m3">-->
+            <br><img src="images/feedback.png">
             <h8>Provide Feedback</h8>
-            <p>We are always looking to improve. If you have any suggestions to improve the site or the content, please <a href="mailto:lemonwatertech@gmail.com">Email </a>us. We welcome suggestions for future blog posts as well!</p>
-        </div>
-        <div class="col s12 m3">
-            <img src="images/submit.png" height = "60%" width ="60%">
-            <br>
-            <h8>Submit Content</h8>
-            <p>Have some good tutorial or advice content for new developers that you want to see on lemon water? Send the following info to us via<a href="mailto:lemonwatertech@gmail.com"> Email </a>:</p><br>
-            <li>Your name and contact info (phone and email) </li>
-            <li>Your Working Title</li>
-            <li>Short Synopsis (~ a paragraph)</li>
-            <br><br><br>
-            <p7><i>Note: lemon water, nor Amanda Aschenbrenner are responsible legally for content submitted here. </i></p7>
-        </div>
-        <div class="col s12 m3">
-            <img src="images/market-product.png" height = "60%" width ="60%">
-            <br>
-            <h8>Market Dev Products</h8>
-            <p>Is your product desirable and/or needed by Developers? We can make space for strong products on this site. <a href="mailto:lemonwatertech@gmail.com">Contact </a>for pricing details. Please provide the following in your inquiry: </p>
-                <li>Your name and contact info (phone and email) </li>
-                <li>Product name and description</li>
-                <li>Link to ecommerce site where product is sold</li>
-            <br>
-            <p7><i>Note: We reserve the right to decline marketing any products that we feel do not fit the brand or add value to our readers.</i></p7>
-        </div>
-        <div class="col s12 m3">
-            <img src="images/hire.png"height = "60%" width ="60%">
-            <br>
+            <h3>We are always looking to improve. If you have any suggestions to improve the site or the content, please <a href="mailto:lemonwatertech@gmail.com">Email </a> them in. Suggestions are also welcome for future blog posts as well!</h3>
+        <!--</div>-->
+        <!--<div class="col s12 m3">-->
+
+            <!--<img src="images/submit.png" >-->
+            <!--<h8>Submit Content</h8>-->
+            <!--<p>Have some good tutorial or advice content for new developers that you want to see on lemon water? Send the following info to us via<a href="mailto:lemonwatertech@gmail.com"> Email </a>:</p>-->
+            <!--<li>Your name and contact info (phone and email) </li>-->
+            <!--<li>Your Working Title</li>-->
+            <!--<li>Short Synopsis (~ a paragraph)</li>-->
+            <!--<br><br>-->
+
+        <!--</div>-->
+        <!--<div class="col s12 m3">-->
+            <!--<img src="images/market-product.png" >-->
+
+            <!--<h8>Market Dev Products</h8>-->
+            <!--<p>Is your product desirable and/or needed by Developers? We can make space for strong products on this site. <a href="mailto:lemonwatertech@gmail.com">Contact </a>for pricing details. Please provide the following in your inquiry: </p>-->
+                <!--<li>Your name and contact info (phone and email) </li>-->
+                <!--<li>Product name and description</li>-->
+                <!--<li>Link to ecommerce site where product is sold</li>-->
+            <!--<br><br>-->
+
+        <!--</div>-->
+        <!--<div class="col s12 m3">-->
+            <br><img src="images/hire.png">
             <h8>Hire Amanda</h8>
-            <p>Amanda is available for freelance work! Contact her via <a href="https://www.linkedin.com/in/aaschenbrenner/">LinkedIn</a> with project proposals. Please include the following info:</p>
-            <li>Your name and contact info (phone and email) </li>
+            <h3>Amanda is available for freelance work! Contact her via <a href="https://www.linkedin.com/in/aaschenbrenner/">LinkedIn</a> with project proposals. Please include the following info in your DM:</h3>
+            <br><li>Your name and contact info (phone and email) </li>
             <li>Project brief</li>
             <li>Tech and time requirements</li>
             <li>Budget for development work</li>
             <li>Why you are interested in Amanda working on this project</li>
-        </div>
+        <!--</div>-->
     </div>
+        <!--<p7><i>Note: lemon water, nor Amanda Aschenbrenner are responsible legally for content submitted. We reserve the right to decline marketing any products that we feel do not fit the brand or add value to our readers.</i></p7>-->
     </div>
 </div>
 <br><br>
